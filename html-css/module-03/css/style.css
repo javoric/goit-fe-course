@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url(../images/nebo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+}
+.wrapper {
+    margin: auto;
+    margin-top: 40px; 
+    padding: 50px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white; 
+}
+.a-01 {
+      display: block;
+}
+.a-02 {
+    display: block;
+    margin-top: 30px;
+}
+.a-03 {
+    display: block;
+    margin-top: 25px;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color:burlywood;
+    padding-top: 25px;
+}
+img {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+.paragrapf {
+    font-weight: 700;
+    margin-top: 20px;
+}
+.text-01 {
+    margin-top: 20px;
+}
+
+
+.a-02 h3 {
+    margin-top: 20px;
+}
+.a-02 p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.meny {
+    column-count: 2;
+    margin-top: 20px;
+}
+ .paragrapf-01 {
+    font-weight: 700;
+    margin-top: 20px;
+ }
+ .text-02 {
+     margin-top: 20px;
+ }
+ ul {
+     padding-left: 40px;
+ }
+ li {
+     font-weight: 700;
+     padding-bottom: 10px;
+ }
