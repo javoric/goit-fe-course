@@ -9,6 +9,8 @@ body {
     background-position: center;
     min-height: 100vh;
     background-size: cover;
+    padding-bottom: 200px;
+    padding-top: 200px;
 }
 .wrapper {
     margin: auto;
