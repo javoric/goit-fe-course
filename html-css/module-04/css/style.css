@@ -47,7 +47,7 @@ li:nth-of-type(3n+2) {
 
 li::before {
     display: inline-block;
-    content:'&#8594';
+    content:'\2192';
     padding: 3px;
     margin: 0 5px;
 
