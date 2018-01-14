@@ -29,3 +29,17 @@
 .menu a:last-child {
     margin-right: 0;
 }
+li {
+    color: #0E1116;
+}
+li:nth-of-type(3n+1) {
+    background-color: #88292F;
+}
+
+li:nth-of-type(3n) {
+    background-color: #5DB7DE;
+}
+
+li:nth-of-type(3n+2) {
+    background-color:#0D5D56;
+}
