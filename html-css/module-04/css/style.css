@@ -5,7 +5,7 @@
     padding: 20px;
     background-color: #798f67;
 }
-/*.search {
+.search {
     padding: 15px;
     background-color: rgb(198, 236, 29);
 }
@@ -42,7 +42,7 @@ li:nth-of-type(3n) {
 
 li:nth-of-type(3n+2) {
     background-color:#0D5D56;
-}*/
+}
 
 
 li::before {
@@ -50,5 +50,7 @@ li::before {
     content:'\2192';
     padding: 3px;
     margin: 0 5px;
-
+}
+p:target {
+    background-color: #f30707
 }
