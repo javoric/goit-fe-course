@@ -5,7 +5,7 @@
     padding: 20px;
     background-color: #798f67;
 }
-.search {
+/*.search {
     padding: 15px;
     background-color: rgb(198, 236, 29);
 }
@@ -53,4 +53,22 @@ li::before {
 }
 p:target {
     background-color: #f30707
+}*/
+li::before {
+    display: inline-block;
+    content: counter(postNumber);
+    padding: 3px;
+    margin: 0 5px;
+    
+}
+li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    white-space: nowrap;
+    border: 1px;
+    background-color: #d1baba;
+    counter-increment: postNumber;
+    
 }
