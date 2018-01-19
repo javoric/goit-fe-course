@@ -54,6 +54,10 @@ li::before {
 p:target {
     background-color: #f30707
 }*/
+ul:{
+    counter-reset:postNumber;
+    margin-bottom: 20px;
+}
 li::before {
     display: inline-block;
     content: counter(postNumber);
