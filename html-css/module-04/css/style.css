@@ -34,9 +34,9 @@ body {
     float: left;
     margin-right: 15px;
 }
-.title {
+/*.title {
     height: 70px;
-}
+}*/
 
 .title-01 {
     font-size: 30px;
@@ -104,9 +104,8 @@ h3 {
 }
 .col-02 {
     display: inline-block;
-    float: right;
     width: 28%;
-    height: 530px;
+    float: right;
 }
 .lead {
     margin-bottom: 50px;
