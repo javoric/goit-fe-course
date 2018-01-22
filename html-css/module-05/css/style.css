@@ -1,0 +1,45 @@
+  .wrapper {
+    width: 500px;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8641c7
+  }
+
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 138px;
+    height: 138px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: "Dorsa";
+    color: rgb(38, 53, 85);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .menu {
+    display: inline-block;
+    padding: 10px;
+    background-color: #e759d4;
+    margin-left: 560px;
+  }
+  .menu a {
+    margin-right: 5px;
+    padding: 5px;
+    text-transform: uppercase;
+    /*float: left;*/
+    color: #abc3d3;
+    text-decoration: none;
+    background-color: #3b303a;
+    vertical-align: auto;
+}

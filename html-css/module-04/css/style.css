@@ -105,7 +105,7 @@ h3 {
 .col-02 {
     display: inline-block;
     width: 28%;
-    float: right;
+    vertical-align: top;
 }
 .lead {
     margin-bottom: 50px;
