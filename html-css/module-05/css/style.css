@@ -33,6 +33,7 @@
     display: inline-block;
     background-color: #2df3f3;
     z-index: 1;
+    transform: translateX(2px);
   }
   a {
     text-decoration: none;
