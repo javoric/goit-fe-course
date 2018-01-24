@@ -3,7 +3,7 @@
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    background-color: #8641c7
+    background-color: #8641c7;
   }
 
   .logo {
@@ -27,19 +27,91 @@
     line-height: 1.2;
     text-align: left;
   }
-  .menu {
+  .rew {
+    width: 500x;
+    position: relative;
     display: inline-block;
-    padding: 10px;
-    background-color: #e759d4;
-    margin-left: 560px;
+    background-color: #2df3f3;
+    z-index: 1;
   }
-  .menu a {
-    margin-right: 5px;
-    padding: 5px;
-    text-transform: uppercase;
-    /*float: left;*/
-    color: #abc3d3;
+  a {
     text-decoration: none;
-    background-color: #3b303a;
-    vertical-align: auto;
+    display: block;
+    padding: 5px;
+  }
+  .menu-b-01 {
+    position: absolute;
+    top: 99%;
+    display: none;
+    background-color: #e0ee1e;
+  }
+  .a-01:hover > .menu-b-01 {
+    display: block;
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  .a-01 {
+    display: inline-block;
+    font-family: "PathwayGothicOne";
+    background-color: #7fffd4;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 15px;
+    margin-right: 7px;
+    padding: 4px;
+}
+  .picture {
+    width: 500px;
+    min-height: 100vh;
+    background-color: #bedfdc;
+}
+.ship {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.menu-link {
+  display: inline-block;
+  background-color: #0004ff;
+  width: 50px;
+  height: 100px;
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  position: relative;
+}
+.menu-link:hover {
+  background-color: #9ca70580
+}
+.menu-link-01 {
+  display: inline-block;
+  background-color: #0004ff;
+  width: 50px;  
+  height: 100px;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  position: relative;
+  margin-left: -4px;
+}
+.menu-link-01:hover {
+  background-color: #9ca70580
+}
+
+.menu-link::before {
+  content: '\2190';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fefefe;
+  text-align: center;
+}
+.menu-link-01::before {
+  content: '\2192';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fefefe;
+  text-align: center;
 }
