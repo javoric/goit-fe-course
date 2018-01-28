@@ -1,23 +1,20 @@
     body {
-    background-image: url(../imajes/Layer-57.png);
-    height: 2120px;
+    background-image: url(../images/Layer-57.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 100px;
     }
     .wrapper {
-     min-width: 100vh;
+      margin: auto;
       min-height: 100vh;
-      padding-top: 115px;
-      padding-left: 140px;
-      position: relative;
+      width: 1024px;
     }
     .menu {
-      display: inline-block;
-      margin-left: 90px;;
-      min-width: 100vh;
-      margin-bottom: 100px;
+      padding: 100px 50px;
       position: relative;
-    }
-    .link {
-      min-width: 100vh;
     }
     .menu-a-01 {
       text-align: center;
@@ -29,9 +26,21 @@
    .menu-b-01  {
       position: absolute;
       top: 99%;
-      display: none;
+      /*display: none;*/
       background-color: #ffffff;
       border-radius: 5px;
+    }
+    .menu-b-01::before {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color:transparent transparent #ffffff transparent;
+        position: absolute;
+        left: 23px;
+        bottom: 53px;
     }
     
     .a-01:hover > .menu-b-01 {
@@ -57,6 +66,7 @@
       font-size: 15px;
       margin-right: 50px;
       padding: 4px;
+      position: relative;
     }
     a {
       color: #ffffff;
@@ -67,15 +77,6 @@
     .a-02 {
       margin-right: 230px;
     }
-    .logo {
-      top: 60px;
-      left: 575px;
-      width: 138px;
-      height: 138px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      position: absolute;
-    }
     .href {
       position: absolute;
       top: 50%;
@@ -85,24 +86,19 @@
       font-family: "Dorsa";
       color: rgb(38, 53, 85);
       text-transform: uppercase;
-      line-height: 1.2;
-      text-align: left;
-    }
-    .carousel {
-      width: 900px;
-      margin: auto;
+      width: 138px;
+      height: 138px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      text-align: center;
+      line-height: 138px;
     }
     .background {
-      display: inline-block;
-      width: 1020px;
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding: 60px;
       background-color: #ffffff;
-      height: 1200px;
     }
     .article {
-      padding-right: 60px;
-      padding-left: 60px;
+      margin-top: 50px;
     }
     .slick-arrow {
       border: 0;
@@ -121,7 +117,7 @@
       bottom: 27px;
       left: 50px;
       display: inline-block;
-      background-color: #0004ff;
+      background-color:#38afe5;
       width: 30px;
       height: 60px;
       line-height: 60px;
@@ -137,35 +133,29 @@
       bottom: 27px;
       left: 20px;
       display: inline-block;
-      background-color: #0004ff;
+      background-color:#38afe5;
       width: 30px;
       height: 60px;
       line-height: 60px;
       border-radius: 100% 0 0 100% / 50% 0 0 50%;
       font-size: 10px;
       outline: 0;
+      
     }
     .slick-next::before {
       content: '\2190';
       color: #fefefe;
     }
     h2 {
-      display: inline-block;
-      height: 130px;
-      margin-left: 60px;
-      padding-top: 60px;
       font-style: italic;
       font-size: 30px;
     }
     .photo {
       height: 350px;
-      padding-left: 60px;
-      padding-right: 60px;
     }
     .tour {
       display: inline-block;
       width: 33%;
-      height: 278px;
       position: relative;
     }
     .tour img {
@@ -175,15 +165,15 @@
     }
     .journey {
       width: 50%;
-      height: 278px;
+      height: 100%;
       background-color: #2b2b2e;
       position: absolute;
       padding-top: 15px;
       padding-bottom: 15px;
-      z-index: -1;
+      display: none;
     }
     .tour:hover > .journey {
-      z-index: 1;
+      display: block;
     }
 
     h3 {
@@ -198,7 +188,7 @@
         font-size: 10px;
         font-family: "Arial";
         color: rgb(203, 198, 198);
-        line-height: 1.6;
+        line-height: 1.4;
         text-align: left;
         margin-bottom: 30px;
       }
