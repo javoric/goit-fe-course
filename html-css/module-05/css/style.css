@@ -22,6 +22,7 @@
     a {
       text-decoration: none;
       display: block;
+      
     }
    .menu-b-01  {
       position: absolute;
@@ -46,6 +47,7 @@
     .a-01:hover > .menu-b-01 {
       display: block;
     }
+    
     .a-01:hover {
       color: #2225da
     }
