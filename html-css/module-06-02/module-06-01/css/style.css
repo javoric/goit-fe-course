@@ -20,13 +20,15 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 80px;
+    
 }
 
 
 
 
 .menu {
-    padding: 120px 50px;
+    padding: 35px 50px;
+    position: relative;
 }
 .menu-a-01 {
     display: flex;
@@ -81,7 +83,7 @@ body {
   }
   .href {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 60px;
@@ -245,7 +247,7 @@ h4 {
 .a:last-child {
     margin-bottom: 0;
 }
-footer {
+/*footer {
     display: flex;
     height: 130px;
     background-color: #201442;
@@ -297,4 +299,69 @@ height: 60px
     color: rgb(255, 255, 255);
     line-height: 1.5;    
     margin-top: 20px;
+}*/
+nav {
+    padding: 50px;
 }
+.links {
+    display: flex;
+    height: 150px;
+    background-color: #201442;
+}
+.cont {
+    display: flex;
+    flex-wrap: wrap; 
+    text-transform: uppercase; 
+}
+.t {
+    flex: 1 0 30%;
+}
+.n {
+    margin-bottom: 10px;
+}
+.contacts {
+    text-align: center;
+    padding: 50px;   
+}
+span {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#ffffff;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 50%;
+}
+
+.twitter {
+    background-image: url(https://image.flaticon.com/icons/svg/220/220618.svg);
+}
+.feisbuc {
+    background-image: url(https://image.flaticon.com/icons/svg/216/216502.svg);
+}
+.google {
+    background-image: url(https://image.flaticon.com/icons/svg/220/220624.svg);
+}
+.linkedin {
+    background-image: url(https://image.flaticon.com/icons/svg/220/220586.svg);
+}
+.y {
+    display: block;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;    
+    margin-top: 20px;
+}
+
