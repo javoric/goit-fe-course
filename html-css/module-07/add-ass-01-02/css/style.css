@@ -19,7 +19,7 @@ body {
 }
 .table {
     width: 210px;
-    padding: 10px;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -34,6 +34,10 @@ body {
 }
 .table-01 {
     margin-bottom: 50px;
+    width: 199px;
+}
+.table-001 {
+    width: 199px;
 }
 .contact {
     text-align: left;
@@ -42,7 +46,7 @@ body {
     font-size: 25px;
 }
 .table-02 {
-    width: 176px;
+    width: 185px;
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
