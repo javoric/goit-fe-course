@@ -1,0 +1,40 @@
+body {
+    padding: 40px;
+}
+
+.hedder {
+    background-color: #ff0000;
+    min-width: 480px;
+    height: 28vh;
+}
+.wrapper {
+    min-width: 480px;
+    margin-top: 40px;
+}
+.b {
+    width: 100%;
+    height: 38vh;
+    background-color: #008000;
+    
+}
+.c {
+    width: 100%;
+    height: 20vh;
+    background-color: #0000ff;
+    margin-top: 40px;
+}
+@media (min-width:768px) {
+    .wrapper {
+        display: flex;
+    }
+    .b {
+        width: 33%;
+        height: 61vh;
+        margin-right: 40px;
+    }
+    .c {
+        width: 64%;
+        height: 61vh;
+        margin-top: 0;
+    }
+}

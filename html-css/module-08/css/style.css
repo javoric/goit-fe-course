@@ -1,0 +1,269 @@
+
+
+body {
+    background-color: #413e3e;
+}
+
+
+.masthead-wrapper {
+    min-width: 20rem;
+    max-width: 48rem;
+    min-height: 100vh;
+    background-color: rgba(0, 255, 255);
+    background-image: url('../images/commando.png');
+    background-blend-mode: color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-top: 12.5rem;
+}
+.container {
+    margin: auto;
+}
+.masthead {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 16rem;
+}
+.logo {
+    color: #ffffff;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 13rem;
+}
+.link-nav {
+    border: 0.125rem solid #ffffff;
+    border-radius: 0.625rem;
+    width: 5.625rem;
+    height: 1.875rem;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.nav-link {
+    width: 5.625rem;
+    height: 1.875rem;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+.link {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+h1 {
+    margin-bottom: 3.125rem;
+    color: #ffffff;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.span {
+    color: #ffffff;
+    font-family:  'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    text-align: center;
+    display: block;
+}
+.hero-btn {
+    display: block; 
+    width: 17.5rem;
+    height: 2.5rem;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    padding-top: 0.6rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.clients-wrapper {
+    background-color: #ffffff;
+    min-width: 20rem;
+    max-width: 48rem;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 3.125rem 1rem;
+    margin-bottom: 12.5rem;
+}
+h3 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    font-size:1.375rem; 
+}
+.client-post-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+}
+
+
+.clients-list-item {
+    margin-bottom: 1.875rem;
+}
+.clients-list-item:nth-last-child(-n+1){
+    margin-bottom: 0;
+}
+.client-post-name {
+    display: block;
+    font-size: 0.875;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.client-post-text {
+    margin-top: 1.25rem;
+    font-size: 1.125rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+    line-height: 1.2;
+    text-align: center;
+}
+.press {
+    display: block; 
+    width: 17.5rem;
+    height: 2.5rem;
+    color: #ff0000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    border: 0.125rem solid #ff0000;
+    border-radius: 2rem;
+    padding-top: 0.6rem;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .masthead-wrapper {
+        background-image: url('../images/commando-01.png');
+        background-size: cover;
+    }
+}
+
+@media (min-width:768px) {
+    .masthead-wrapper {
+        min-width: 48rem;
+        max-width: 57.5rem;
+    }
+    .masthead {
+        flex-direction: inherit;
+        justify-content: space-around;
+        height: 10rem;
+    }
+    h1 {
+        font-size: 3.25rem;
+        padding-left: 9.5rem;
+        padding-right: 9.5rem;
+        margin-bottom: 2rem;
+        line-height: 4rem;
+    }
+    .hero-btn {
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 16rem;
+    }
+
+    .clients-wrapper {
+        min-width: 48rem;
+        max-width: 57.5rem;
+        padding-top: 4.375rem;
+    }
+    .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2.2rem;
+    }
+    .clients-list-item:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+    .clients-list-item {
+        flex: 1 0 50%;
+        width: 12.5rem;
+    }
+    .client-post-text {
+        font-size: 1rem;
+    }
+    .press {
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 16rem;
+    }
+}
+@media (min-width:940px) {
+    .masthead-wrapper {
+        min-width: 57.5rem; 
+        max-width: 87.5rem;  
+    }
+    .masthead {
+        justify-content: space-between;
+    }
+    .container {
+        max-width: 57.5rem;
+    }
+    .clients-wrapper {
+        min-width: 57.5rem;
+        max-width: 87.5rem; 
+        padding-top: 4.375rem;
+    }
+    .clients-list {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .clients-list-item {
+        flex: 1 0 25%;
+    }
+    .clients-list-item:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+    .press {
+        margin-top: 5rem;
+    }
+}
+
+
+
+  

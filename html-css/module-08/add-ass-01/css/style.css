@@ -1,0 +1,37 @@
+.wrapper {
+    width: 1000px;
+    
+}
+header {
+    width: 960px;
+    height: 40px;
+    background-color: #ffff00;
+}
+section {
+    display: flex;
+    width: 960px;
+    height: 400px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.a {
+    width: 54.1666%;
+    
+    background-color: #3e3ef7;
+}
+.b {
+    width: 20.8333%;
+    
+    background-color: #515152;  
+}
+.c {
+    width: 20.8333%;
+    
+    background-color: #9c3d3a;   
+}
+footer {
+    width: 960px;
+    height: 40px;
+    background-color: #3cff00;
+    margin-top: 20px;
+}

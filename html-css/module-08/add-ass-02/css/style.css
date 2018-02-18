@@ -1,0 +1,26 @@
+.wrapper {
+    max-width: 480px;
+    height: 700px;
+}
+.content {
+    min-width: 100vh;
+    height: 50%;
+    background-color: #c0fb66;
+}
+.sidebar {
+    min-width: 100vh;
+    height: 50%;
+    background-color: #567715;
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        display: flex;
+    }
+    .content {
+        width: 75%;
+    }
+    .sidebar {
+        width: 25%;
+    }
+}
