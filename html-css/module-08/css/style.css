@@ -1,7 +1,5 @@
 
 .masthead-wrapper {
-    min-width: 20rem;
-    max-width: 48rem;
     background-color: rgba(0, 255, 255, 0.356);
     background-image: url('../images/commando.png');
     background-blend-mode: color;
@@ -13,6 +11,9 @@
 }
 .container {
     margin: auto;
+}
+.banner {
+    padding-bottom: 9.375rem;
 }
 .masthead {
     display: flex;
@@ -33,7 +34,7 @@
 .nav {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 13rem;
+    margin-bottom: 12.5rem; 
 }
 .link-nav {
     border: 0.125rem solid #ffffff;
@@ -109,6 +110,7 @@ h3 {
     font-size:1.375rem; 
 }
 .client-post-image {
+    width: 8.125rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,12 +171,9 @@ h3 {
 }
 
 @media (min-width:768px) {
-    .masthead-wrapper {
-        min-width: 48rem;
-        max-width: 57.5rem;
-    }
+    
     .masthead {
-        flex-direction: inherit;
+        flex-direction: initial;
         justify-content: space-around;
         height: 10rem;
     }
@@ -223,9 +222,7 @@ h3 {
     }
 }
 @media (min-width:940px) {
-    .masthead-wrapper {
-        max-width: 100vw;  
-    }
+    
     .masthead {
         justify-content: space-between;
     }
