@@ -1,0 +1,35 @@
+.content {
+    background-color: yellow;
+   height: 400px;
+   padding-top: 100px;
+}
+
+.sidebar {
+    background-color: rgb(70, 116, 3);
+    height: 400px;
+    padding-top: 100px;
+}
+p {
+    font-size: 60px;
+    text-align: center;
+    color: #13110f;
+}
+.header{
+    background-color: #fcaa40;
+    height: 400px;
+    padding-top: 100px;
+}
+.text {
+    background-color: #fa73ab;
+    height: 400px;
+    padding-top: 100px;
+}
+.footer {
+    background-color: #fcaa40;
+    height: 400px;
+    padding-top: 100px;
+}
+
+.foot {
+    color: #6e3f02;
+}
