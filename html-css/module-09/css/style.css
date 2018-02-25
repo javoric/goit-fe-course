@@ -12,12 +12,12 @@
 .masthead {
     display: flex;
     flex-direction: column-reverse;
-    height: 16rem;
-    padding-bottom: 5rem;
+    
+    padding-bottom: 2rem;
 }
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 12.5rem; 
 }
 .link-nav {
@@ -61,7 +61,7 @@ h1 {
     text-transform: uppercase;
     line-height: 2rem;
     text-align: center;
-    width: 18.75rem;
+    max-width: 18.75rem;
     margin: auto;
     margin-bottom: 3.125rem;
 }
@@ -75,13 +75,13 @@ h1 {
     line-height: 1.5rem;
     text-align: center;
     display: block;
-    width: 19rem;
+    max-width: 18.75rem;
     margin: auto;
 
 }
 .hero-btn {
     display: block; 
-    width: 17.5rem;
+    max-width: 18.75rem;
     height: 2.5rem;
     background-color: rgb(255, 0, 0);
     color: #ffffff;
@@ -169,6 +169,9 @@ h3 {
 @media (max-width:767px) {
     .clients [class*="col-"]:not(:last-child){
         margin-bottom: 1rem;
+    }
+    .logo {
+        order: inherit;
     }
 }
 

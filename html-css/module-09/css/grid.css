@@ -24,7 +24,7 @@
     padding-right: 15px;
     text-align: center;
   }
-  .justify-content-between {
+  .justify-content-md-between {
     justify-content: space-between;
   }
   .col-12 {
@@ -33,6 +33,10 @@
   }
 
 @media (min-width: 768px) {
+    .col-md-3 {
+      flex-basis: 25%;
+    max-width: 25%;
+    }
   
     .col-md-6 {
       flex-basis: 50%;
