@@ -16,6 +16,27 @@ font-family: 'Roboto', sans-serif;*/
   background-size: cover;
   background-position: center;
 }
+@media (min-resolution: 2dppx) {
+  .masthead-wrapper {
+    background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor.png')
+  }
+}
+ 
+@media (min-resolution: 3dppx) {
+  .masthead-wrapper {
+    background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor-big.png')
+  }
+}
 .container {
   max-width: 1200px;
   margin: auto;
@@ -43,12 +64,19 @@ font-family: 'Roboto', sans-serif;*/
 .logo span {
   text-transform: uppercase;
 }
-.nav {
+.site {
   display: flex;
+  justify-content: space-between;
+  width: 620px;
+}
+.nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
 .nav__item {
   display: inline;
-  margin-left: 60px;
 }
 .nav__item:first-child {
   margin-left: 0;
@@ -68,7 +96,13 @@ font-family: 'Roboto', sans-serif;*/
   color: #fce38a;
   border-color: #fce38a;
 }
-
+.nav-user {
+  width: 75px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
 
 .hero {
   width: 840px;
@@ -151,6 +185,14 @@ font-family: 'Roboto', sans-serif;*/
   justify-content: space-between;
   width: 30%;
   margin-bottom: 100px;
+}
+/*.a {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../images/icons/photography.svg');
 }
 .icon-list__link {
   margin-right: 30px;
@@ -270,6 +312,7 @@ font-family: 'Roboto', sans-serif;*/
   width: 50px;
   background-color: #fce38a;
   position: relative;
+  margin-right: 1px;
 }
 .team-card-icon:hover {
   background-color: #f38181;
@@ -280,8 +323,6 @@ font-family: 'Roboto', sans-serif;*/
 
 .ikon {
   fill: #f38181;
-  width: 30px;
-  height: 25px;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -324,7 +365,7 @@ font-family: 'Roboto', sans-serif;*/
   height: 2px;
   background-color: rgb(229, 229, 229);
 }
-.
+
 
 .copyrighted {
   font-size: 14px;
@@ -361,7 +402,6 @@ font-family: 'Roboto', sans-serif;*/
   text-align: center;
 }*/
 
-
 .masthead-wrapper {
   min-height: 1000px;
   background-image:-webkit-gradient(
@@ -392,6 +432,65 @@ font-family: 'Roboto', sans-serif;*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .masthead-wrapper {
+    background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.81)),
+      to(rgba(243, 129, 129, 0.81))
+  ),
+    url('../images/condor.png');
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor.png');
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor.png');
+    background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor.png')
+  }
+}
+ 
+@media (-webkit-min-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3/1), (min-resolution: 3dppx) {
+  .masthead-wrapper {
+    background-image: -webkit-gradient(
+      linear,
+      left bottom, left top,
+      from(rgba(252, 227, 138, 0.81)),
+      to(rgba(243, 129, 129, 0.81))
+  ),
+    url('../images/condor-big.png');
+    background-image: -webkit-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor-big.png');
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor-big.png');
+    background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.81) 0%,
+      rgba(243, 129, 129, 0.81) 100%
+  ),
+    url('../images/condor-big.png')
+  }
 }
 .container {
   max-width: 1200px;
@@ -426,14 +525,27 @@ font-family: 'Roboto', sans-serif;*/
 .logo span {
   text-transform: uppercase;
 }
-.nav {
+.site {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 620px;
+}
+.nav {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
 }
 .nav__item {
   display: inline;
-  margin-left: 60px;
 }
 .nav__item:first-child {
   margin-left: 0;
@@ -453,7 +565,17 @@ font-family: 'Roboto', sans-serif;*/
   color: #fce38a;
   border-color: #fce38a;
 }
-
+.nav-user {
+  width: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
 
 .hero {
   width: 840px;
@@ -700,6 +822,7 @@ font-family: 'Roboto', sans-serif;*/
   width: 50px;
   background-color: #fce38a;
   position: relative;
+  margin-right: 1px;
 }
 .team-card-icon:hover {
   background-color: #f38181;
@@ -710,8 +833,6 @@ font-family: 'Roboto', sans-serif;*/
 
 .ikon {
   fill: #f38181;
-  width: 30px;
-  height: 25px;
   display: inline-block;
   position: absolute;
   top: 50%;
@@ -769,7 +890,7 @@ font-family: 'Roboto', sans-serif;*/
   height: 2px;
   background-color: rgb(229, 229, 229);
 }
-.
+
 
 .copyrighted {
   font-size: 14px;
