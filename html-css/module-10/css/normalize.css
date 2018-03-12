@@ -339,4 +339,7 @@
   [hidden] {
     display: none;
   }
+  ul {
+    padding: 0;
+  }
   
