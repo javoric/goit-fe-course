@@ -1,32 +1,115 @@
-const sharm = 1;
-const hurgada = 2;
-const taba = 3;
 
-let sharmPlaces = 15;
-let hurgadaPlaces = 25;
-let tabaPlaces = 6;
 
-const choice = prompt('1 - sharm, 2 - hurgada, 3 -taba');
-const hotelChoice = Number(choice);
-const isValidInput = choice !== null && !Number.isNaN(hotelChoice);
-  if (isValidInput) {
+  
+  const sharm = 'Шарм Аль Шейх';
+  const hurgada = 'Хургада';
+  const taba = 'Таба';
+  
+  let sharmPlaces = 15;
+  let hurgadaPlaces = 25;
+  let tabaPlaces = 6;
 
-//let numberPlacesGroups;//свободные номера
-//let numberPlacesEnteredUser;//колво мест введённых пользователем
+  
+  
 
-   switch (hotelChoice) {
-       case taba:
-       let numberPlacesEnteredUser = Number(prompt('Введите колличество необходимы мест'));
-         let freePlaces = numberPlacesGroups <= tabaPlaces;
-       //numberPlacesGroups <= tabaPlaces;
-       //console.log(messege);
+  //колво мест введённых пользователем
+  let numberPlacesEnteredUser = Number(prompt('Введите колличество необходимы мест'));
+  
+  let freePlaces = (hurgadaPlaces - numberPlacesEnteredUser);
+     
+  
 
-       let freePlaces = confirm('Есть место в группе Таба. Согласны ли вы отдохнуть в этой группе?')
+     if (numberPlacesEnteredUser >= 0 && Number.isInteger(numberPlacesEnteredUser)) {
+       console.log('проверяем наличие необходимых мест в группах');
+       if (numberPlacesEnteredUser <= tabaPlaces) {
+        const noSeatsTaba = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${taba}, бронировать?`);
+        
+          if (noSeatsTaba) {
+            remainingPlacesTaba = tabaPlaces - numberPlacesEnteredUser;
+            console.log(`В ${taba} осталось ${remainingPlacesTaba} мест`);
 
-       //numberPlacesGroups = tabaPlaces;
-       //numberPlacesEnteredUser = 
-   }
+            alert(`приятного отдыха в ${taba} `);
+          }
+        }
+    
+        if (numberPlacesEnteredUser <= sharmPlaces) {
+          const noSeatsSharm = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${sharm}, бронировать?`);
 
-  } else {
-      alert('Ошибка ввода')
-  }
+          if (noSeatsSharm) {
+            remainingPlacesSharm = sharmPlaces - numberPlacesEnteredUser;
+            console.log(`В ${sharm} осталось ${remainingPlacesSharm} мест`);
+
+            alert(`приятного отдыха в ${sharm} `);
+           
+          }
+        }
+    
+
+        if (numberPlacesEnteredUser <=hurgadaPlaces) {
+          const noSeatsHurgada = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${hurgada}, бронировать?`);
+
+          if (noSeatsHurgada) {
+            remainingPlacesHurgada = sharmPlaces - numberPlacesEnteredUser;
+            console.log(`В ${hurgada} осталось ${remainingPlacesHurgada} мест`);
+
+            alert(`приятного отдыха в ${hurgada}`);
+           
+          }
+        }
+
+      } else {
+        alert('Ошибка ввода');
+        }
+        if (freePlaces = numberPlacesEnteredUser > 25) {
+          const noSeats = confirm(`Извините, но ${numberPlacesEnteredUser} мест в группах нет`);
+         console.log(noSeats);
+
+      } 
+     
+
+
+
+
+     /*if (freePlaces = numberPlacesEnteredUser > 0 && numberPlacesEnteredUser <= tabaPlaces) {
+      const numTaba = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${taba}`);
+       console.log(numTaba);
+      
+       if (numberPlacesEnteredUser <= tabaPlaces) {
+       const noSeatsTaba = tabaPlaces - numberPlacesEnteredUser;
+       alert(noSeatsTaba);
+       }
+
+
+     } if (freePlaces = numberPlacesEnteredUser > 0 && numberPlacesEnteredUser <= sharmPlaces) {
+
+      if (numberPlacesEnteredUser <= sharmPlaces) {
+        const noSeatsTaba = sharmPlaces - numberPlacesEnteredUser;
+        alert(noSeatsTaba);
+        }
+
+      const numSharm = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${sharm}`);
+       console.log(numSharm);
+     } if (freePlaces = numberPlacesEnteredUser > 0 && numberPlacesEnteredUser <= hurgadaPlaces) {
+
+      if (numberPlacesEnteredUser <= hurgadaPlaces) {
+        const noSeatsTaba = hurgadaPlaces - numberPlacesEnteredUser;
+        alert(noSeatsTaba);
+        }
+
+      const numHurgada = confirm(`Есть ${numberPlacesEnteredUser} мест в группе ${hurgada}`);
+        console.log(numHurgada);
+     } else if (freePlaces = numberPlacesEnteredUser > 25) {
+      const noSeats = confirm(`Извините, но ${numberPlacesEnteredUser} мест в группах нет`);
+     console.log(noSeats);
+     } else {
+      alert('Ошибка ввода'); 
+     }
+
+     if (numberPlacesEnteredUser) {
+       
+     }*/
+     
+      
+
+
+   
