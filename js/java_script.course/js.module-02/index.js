@@ -28,23 +28,6 @@
 
 
 
-/*let tre = [];
-
-let number = prompt('Введите числа через запятую');
-let num = number.split(',');
- //tre.push(num);
- //console.log(tre);
- const isNull = number === null;
- //const isNaN = Number.isNan(number);
- const isEmpty = number === '';
-if (!isNull && !isEmpty) {
-  let sum = 0;
-    for (let i = 0; i < num.length; i += 1) { 
-     let conjunction = Number(num[i]);
-     sum = sum + conjunction;
-    }
-    console.log(`сумма: ${sum}`);
-  }*/
 
   let userInput = prompt('Введите числа через запятую');
   let input = userInput.split(',');
