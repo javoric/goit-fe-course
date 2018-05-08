@@ -21,30 +21,22 @@
     - Вывести alert с текстом `Общая сумма чисел равна ${сумма}`
 */
 
+let userInput;
+const numbers = [];
+let total = 0;
 
-
-
-
-
-
-
-
-  let userInput = prompt('Введите числа через запятую');
-  let input = userInput.split(',');
-  const numbers = [];
-  numbers.push(input);
-  console.log(numbers);
-
-
-  let total = 0;
-  const isNull = userInput === null;
-  //const isNaN = Number.isNan(userInput);
-  const isEmpty = userInput === '';
-    if (isNull && isEmpty) {
- 
-    for (let i = 0; i < input.length; i += 1) { 
-     let sum = Number(input[i]);
-     total = total + input[i];
-    }
- console.log(total);
+while(userInput = numbers !== Number.isNaN && numbers !== '') {
+  
+  userInput = prompt('Ведите числа через запятую');
+  if(userInput !== null) {
+      break;
+  } 
 }
+let num = userInput.split(',');
+console.log(num);
+for (let i = 0; i < num.length; i += 1) { 
+  let conjunction = Number(num[i]);
+  total = total + conjunction; 
+ }
+ alert(`сумма: ${total}`);
+
