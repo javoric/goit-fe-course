@@ -33,9 +33,12 @@ let total = 0;
 }
   while (true);
 for (let i = 0; i < numbers.length; i += 1) { 
+  if (numbers > 0) {
   let conjunction = Number(numbers[i]);
   total = total + conjunction; 
+   }
+  alert(`сумма: ${total}`);
  }
- alert(`сумма: ${total}`);
+ 
 
  
