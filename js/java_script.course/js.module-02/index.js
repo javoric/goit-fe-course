@@ -24,19 +24,18 @@
 let userInput;
 const numbers = [];
 let total = 0;
-
-while(userInput = numbers !== Number.isNaN && numbers !== '') {
   
-  userInput = prompt('Ведите числа через запятую');
-  if(userInput !== null) {
-      break;
-  } 
+  do { userInput = prompt('Ведите число');
+     if (userInput === null) {
+       break;
+     }
+     numbers.push(userInput);  
 }
-let num = userInput.split(',');
-console.log(num);
-for (let i = 0; i < num.length; i += 1) { 
-  let conjunction = Number(num[i]);
+  while (true);
+for (let i = 0; i < numbers.length; i += 1) { 
+  let conjunction = Number(numbers[i]);
   total = total + conjunction; 
  }
  alert(`сумма: ${total}`);
 
+ 
