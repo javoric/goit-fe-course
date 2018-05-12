@@ -45,18 +45,14 @@ const checkLoginValidity = function(login) {
    
    const checkIfLoginExists = (logins, login) => logins.includes(login);
 
-                            const addLogin = function(logins, login, check) {
-                                  if (checkLoginValidity) {
-                                    check('fgghj');
-                                  } else {
-                                    check('mnbv');
-                                  }
-                                return logins;
-            };
-                                const x = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-                                const y = prompt('введите логин');
-                                 const rt = addLogin(x, y, checkLoginValidity);
-                                console.log(rt);
+      const addLogin = function(logins, login,) {
+        
+        return logins;
+    };
+         const x = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+         const y = prompt('введите логин');
+        const result = addLogin(x, y,);
+                                console.log(result);
     
        //===========================================================================
             
