@@ -52,66 +52,6 @@ const checkLoginValidity = function(login) {
          const x = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
          const y = prompt('введите логин');
         const result = addLogin(x, y,);
-                                console.log(result);
+          console.log(result);
     
-       //===========================================================================
-            
-              /*if (login.length < 4 || login.length > 16) {
-                 alert('Ошибка! Логин должен быть от 4 до 16 символов');
-             } else {
-                logins.push(login);
-             }*/
-
-             //===================================================
-            
-            /* const checkLoginValidity = function(login) {
-                 //let number = login.length;
-                
-                  if (login.length < 4 || login.length > 16) {
-                    return false;
-                 } else {
-                    return true;
-                 }
-                   //return number;
-                };*/
-                
-                /*let tyu = 'gfdsa';
-            
-                console.log(checkLoginValidity(tyu));*/
-       //======================================================================
-            
-//============================================================
-    //const checkIfLoginExists = (logins, login) => logins.includes(login);
-   /*return logins.includes(login);
-
-
-const arre = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-console.log(checkIfLoginExists(arre, "AjsBozz"));*/
-
-            /*const checkIfLoginExists = function(logins, login) {
-                const num = logins.includes(login);
-                console.log(num);
-          };
-
-              const arre = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-              checkIfLoginExists(arre, "Mngo");*/
-
-//==================================================================
-
-          /*const checkLoginValidity = function(login) {
-            
-              if (login.length < 4 || login.length > 16) {
-                 false;
-             } else {
-                 true;
-             }
-             return boolean;
-            };*/
-
-
-            /*if (num) {
-                logins.push(login);
-               } else {
-                   console.log(false);
-               }
-               return num;*/
+       
