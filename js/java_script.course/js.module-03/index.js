@@ -31,27 +31,33 @@
       возвращая строки указанные в пунктах 5 и 6. Больше ничего не делает.
 */
 
-const checkLoginValidity = function(login) {
-    
-   
-     if (login.length < 4 || login.length > 16) {
-       return false;
-       
-    } else {
-       return true;
-    }
-      
-   };
-   
-   const checkIfLoginExists = (logins, login) => logins.includes(login);
 
-      const addLogin = function(logins, login,) {
+
+const checkLoginValidity = function(login) {
+  let number = login.length;
+  if (number < 4 || number > 16) {
+     return false;  
+  } else {
+     return true;
+  }  
+ };
+ 
+ const checkIfLoginExists = (logins, login) => logins.includes(login);
+    const addLogin = function(logins, login,) {
+        if (checkLoginValidity(login)) {
+          return;
+        } else {
+          alert('Ошибка! Логин должен быть от 4 до 16 символов');
+        } if (checkIfLoginExists(login)){
+          return;
+        } else {
+          logins.push(login);
+        }   
+      return logins;
+  };
+       const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
+       const login = prompt('введите логин');
+       console.log(addLogin(logins, login));
         
-        return logins;
-    };
-         const x = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
-         const y = prompt('введите логин');
-        const result = addLogin(x, y,);
-          console.log(result);
     
-       
+      
