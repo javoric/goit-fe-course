@@ -36,22 +36,26 @@
 const checkLoginValidity = function(login) {
   let number = login.length;
   if (number < 4 || number > 16) {
-     return true;  
+     return false;  
   } else {
-     return false;
+     return true;
   }  
  };
  
- const checkIfLoginExists = (logins, login) => logins.includes(login);
+ const checkIfLoginExists = (login) => logins.includes(login);
+ 
     const addLogin = function(logins, login,) {
         if (checkLoginValidity(login)) {
-          alert('Ошибка! Логин должен быть от 4 до 16 символов');
-        } else if (checkIfLoginExists(login)){
-          return;
+          if (checkIfLoginExists(login)) {
+            alert('Такой логин уже используется');
+          } else {
+            logins.push(login);
+            alert('Логин успешно добавлен');
+          } 
         } else {
-          logins.push(login);
-        }
-      return logins;
+          alert('Ошибка! Логин должен быть от 4 до 16 символов');
+        }  
+        return logins;
   };
        const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
        const login = prompt('введите логин');
