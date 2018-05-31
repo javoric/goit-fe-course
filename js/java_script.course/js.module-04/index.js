@@ -110,8 +110,8 @@ const products = {
         let surrender = customerMoney - totalPrice;
         if (customerMoney >= totalPrice) {
           alert (`Спасибо за покупку, ваша сдача ${surrender}`); 
-         let changeAmount = `Сдача ${surrender}`;
-         console.log(changeAmount);
+          this.customerMoney = `Сдача ${surrender}`;
+         console.log(this.customerMoney);
           return;
       } if (customerMoney === null) {
         return;
