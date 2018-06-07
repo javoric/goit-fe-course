@@ -79,35 +79,50 @@ const getId = () => "-" + Math.random().toString(36).substr(2, 9);
     - getUsersCount() - возвращает общее количество пользователей
 */
 
-/*
-  ***ДОПОЛНИТЕЛЬНОЕ ЗАДАНИЕ - выполнять по желанию***
-  Добавьте в SocialBook следующие методы для работы с постами пользователей:
-    - getUserPosts(userId) - возвращает массив постов пользователя с id равным userId
-    
-    - addPost(userId, post) - добавляет post в поле posts объекта socialBook по ключу userId. 
-    
-    - removePost(userId, postId) - удаляет post с id равным postId из поля posts 
-      объекта socialBook по ключу userId
-      
-    - getAllLikes(userId) - возвращает сумму всех полей likes постов пользователя с id равным userId
-          
-    - addPostLike(userId, postId) - увеличивает значение поля likes на 1 у поста с id равным postId, 
-      для пользователя с id равным userId
-    
-    - getPostsCount(userId) - возвращает общее количество постов пользователя с id равным userId
+ 
+/*const removeUserById = function(userId) {
+  initialUsers.find(x => x.id === id);
+  return;
+};
+ 
+console.log(removeUserById("-s19a6hqce"));
 */
 function SocialBook (users = [], posts = {}) { 
-    this.users = users,
-    this.posts = posts
-    this.user = { id: getId(), login: "mango@mail.com", password: "kwe654zv", isActive: true };
-    this.getAllUsers = () => initialUsers.map(user => user.id);
-    this.getUserByLogin = (user, login) => initialUsers.find(user => user.login === initialUsers.login);
-    this.getUserStatus = (user, id) => initialUsers.filter(user => user.isActive);
+    this.users = users;
+    this.posts = posts;
+    this.getAllUsers = () => this.users;
+    this.getUserByLogin = (login) => this.users.find(user => user.login === login);
+    
+    this.getUserStatus = (id) => {
+      const user = this.users.find(user => user.id === id);
+
+      if(user) {
+      return user.isActive = 'есть';
+      }
+      return null;
+    };
    
+    this.addUser = (user) => {
+      const userNow = {id: '', login: "ozedog@mail.com", password: "qwe873zviu", isActive: false};
+      const x = {id: getId(), isActive: false};
+       
+      Object.assign(userNow, x);
+      this.users.push(userNow);
+      return this.users;
+    }; 
+
+    
   };
  
-  const Petya = new SocialBook(initialUsers, initialPosts);
-  Petya.getAllUsers();
-  Petya.getUserByLogin(initialUsers, "polysweet@skynet.ze");
-  Petya.getUserStatus(initialUsers, "-s19a6hqce");
-  console.log(Petya);
+  const petya = new SocialBook(initialUsers, initialPosts);
+  console.log(petya.getAllUsers());
+  console.log(petya.getUserByLogin("polysweet@skynet.ze"));
+  console.log(petya.getUserStatus("098-s19a6hqce"));
+  console.log(petya.addUser(initialUsers));
+  
+  
+  console.log(petya);
+
+  
+
+  
