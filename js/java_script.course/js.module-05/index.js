@@ -121,7 +121,7 @@ function SocialBook (users = [], posts = {}) {
   console.log(petya.addUser(initialUsers));
   
   
-  console.log(petya);
+  console.log(petya);  
 
   
 
