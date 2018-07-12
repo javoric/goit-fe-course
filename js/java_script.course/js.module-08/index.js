@@ -74,3 +74,7 @@ fullview.setAttribute('src', imgUrl);
 
 const xz = document.querySelector('.fullview > img');
 console.log(xz);
+
+
+let date = new Date();
+console.log(date);
