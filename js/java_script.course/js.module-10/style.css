@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.zapros {
+    margin-right: 5px;
+}
+
+.result {
+    width: 250px;
+    
+    background-color: yellow;
+}
