@@ -6,6 +6,7 @@ const startBtn = document.querySelector(".js-start");
 const stopBtn = document.querySelector(".js-take-lap");
 const resetBtn = document.querySelector(".js-reset");
 
+//resetBtn.classList.add('reset');
 
 let minutes;
 let seconds;
@@ -14,6 +15,8 @@ let miliSeconds;
 let counter = 0;
 let deltaTime = 0;
 let startTime = Date.now();
+
+let stop = '00:00.0';
 
 let timers = null;
 let isActiv = false;
@@ -29,6 +32,7 @@ timers = setInterval(() => {
   
 
   const timeee = new Date(deltaTime);
+  
   
   minutes = timeee.getMinutes();
   seconds = timeee.getSeconds();
@@ -51,6 +55,8 @@ timers = setInterval(() => {
   msec = `${miliSeconds}`;
   time.textContent = (min + sec + msec);
 
+  startBtn.replaceWith(resetBtn);
+  //resetBtn.classList.remove('.reset');
   
 }, 100)}
 };
@@ -60,10 +66,15 @@ function lep () {
   isActiv = false;
 }
 
+
 function reset () {
   clearInterval(timers);
   isActiv = false;
-  time.textContent = startTime;
+  
+  resetBtn.replaceWith(startBtn);
+  
+  time.textContent = stop;
+  
 }
 
 startBtn.addEventListener('click', start);
@@ -71,8 +82,5 @@ startBtn.addEventListener('click', start);
 stopBtn.addEventListener('click', lep)
 
 resetBtn.addEventListener('click', reset)
-
-
-
 
 
