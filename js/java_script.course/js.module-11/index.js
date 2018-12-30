@@ -109,3 +109,5 @@ const laptops = [
   form.addEventListener('submit', (event) => {
       event.preventDefault();
   });
+
+  const filter = { size: [], color: [], release_date: [] }

@@ -23,11 +23,10 @@ let isActiv = false;
 
 function start () {
 if (!isActiv) {
+ 
   isActiv = true;
 timers = setInterval(() => {
-  const currentime = Date.now();
-
-  deltaTime = (currentime - startTime);
+  deltaTime = (Date.now() - startTime);
 
   
 
@@ -58,11 +57,11 @@ timers = setInterval(() => {
   startBtn.replaceWith(resetBtn);
   //resetBtn.classList.remove('.reset');
   
-}, 100)}
-};
+}, 100)}};
 
-function lep () {
+function lep() {
   clearInterval(timers);
+  timers = null;
   isActiv = false;
 }
 
@@ -76,6 +75,7 @@ function reset () {
   time.textContent = stop;
   
 }
+
 
 startBtn.addEventListener('click', start);
  
