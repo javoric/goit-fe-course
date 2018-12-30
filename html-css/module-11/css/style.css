@@ -1,0 +1,483 @@
+.wrapper {
+    background-image: url(../images/layer.4png);
+    margin: auto;
+}
+  
+/*header + masthead-------------------*/
+
+.masthead-wrapper {
+   background-image: 
+   linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url(../images/koza.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100vw;
+   min-height: 48rem;  
+}
+
+.container {
+    min-width: 20rem;
+    max-width: 75rem;
+    margin: auto;
+}
+
+.masthead {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+ .nav-item {
+    width: 5.625rem;
+    height: 1.875rem;
+    text-align: center;
+    padding-top: 0.3rem;
+ }
+
+.nav-link {
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 0.875rem;
+    color: var(--wait-color);
+}
+
+.hero {
+    margin-top: 8rem;
+    text-align: center;
+}
+
+ h1 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-ser;
+    color: #cece5b;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.hero::after {
+    display: inline-block;
+    content: '';
+    width: 4.2rem;
+    height: 0.3rem;
+    background-color: #cece5b;
+}
+
+/*production---------*/
+
+.production-wrapper {
+    margin-top: 1.2rem;
+}
+
+.section-header {
+    height: 100%;
+}
+
+.section-header-caption {
+    background-color: var(--green-color);
+    width: 100%;
+    text-align: center;
+    height: 8rem; 
+    padding-bottom: 0.7rem;
+}
+
+.section-header-caption::after {
+    display: inline-block;
+    content: '';
+    width: 4.2rem;
+    height: 0.3rem;
+    background-color: var(--wait-color);
+}
+
+.section-header-caption h3 {
+    font-size: 2.5rem;
+    color: var(--wait-color);
+    font-family: var(--font);
+    font-weight: bold;
+    line-height: 2;
+}
+
+.section-header-aside {
+    padding: 1.2rem;
+}
+
+.section-header-aside p {
+    font-size: 1rem;
+    font-family: var(--font);
+    color: var(--color-fonts-text);
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-header-aside img {
+    object-fit: cover;
+    height: 15rem;
+    width: 100%;
+}
+
+/*products---------------*/
+
+
+.products-card {
+    width: 24rem;
+    position: relative;
+    margin: auto;
+}
+
+.products-card-image {
+    padding: 1.2rem 3.2rem;
+}
+.products-card-image img {
+    width: 100%;
+    height: 42rem;
+    object-fit: cover;
+}
+
+.products-card-meta {
+    width: 17.6rem;
+    height: 5.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+     display: none; 
+}
+
+.products-card-name {
+    font-size: 1.2rem;
+    font-family: var(--font);
+    color: var(--wait-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.316;
+    margin-top: 0.3rem;
+}
+
+.products-card-description {
+    font-size: 0.8rem;
+    font-family: var(--font);
+    color: var(--wait-color);
+    text-transform: uppercase;
+    line-height: 1.286; 
+    margin-top: 0.5rem; 
+}
+
+.products-card-image:hover > .products-card-meta {
+    display: block;
+}
+
+.slick-arrow {
+    border: 0;
+    position: absolute;
+    height: 3.3rem;
+    width: 4rem;
+    z-index: 10;
+    background-color: #008080;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .slick-arrow:hover {
+    background-color: var(--color-fonts-footer);
+  }
+  .slick-prev {
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 1.23rem;
+    display: inline-block;
+    background-color: var(--green-color);
+    width: 2rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    font-size: 0.7rem;
+    outline: 0;
+  }
+  .slick-prev::before {
+    content: '\2192';
+    color: #fefefe;
+  }
+  .slick-next {
+    bottom: 50%;
+    transform: translateY(50%);
+    left: 1.23rem;
+    display: inline-block;
+    background-color: var(--green-color);
+    width: 2rem;
+    height: 4rem;
+    line-height: 3.9rem;
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    font-size: 0.7rem;
+    outline: 0;
+    
+  }
+  .slick-next::before {
+    content: '\2190';
+    color: #fefefe;
+  }
+ 
+/*-------team-------------*/
+
+.team-list-item {
+    width: 23.73rem;
+    position: relative;
+    margin: auto;
+}
+
+.team-card-image {
+    padding: 1.2rem 3.2rem;
+}
+
+.team-card-image img {
+    width: 100%;
+    height: 26.9rem;
+    object-fit: cover;
+}
+
+.team-card-contacts {
+    width: 17.3rem;
+    height: 5.3rem;
+    background-color: var(--bleck-color);
+    opacity: 0.502;
+    position: absolute;
+    bottom: 6.4rem;
+    padding-left: 2rem;
+    padding-top: 1rem; 
+    display: none;
+}
+
+.team-card-image:hover > .team-card-contacts {
+    display: block;
+}
+
+.pfone a {
+    font-size: 1rem;
+    font-family: "OpenSans";
+    color: var(--wait-color);
+    line-height: 1.563;
+}
+
+.pfone::before {
+    display: inline-block;
+    content: '\2709'; 
+    width: 1.2rem;
+    height: 0.8rem;
+    color: var(--green-color);
+}
+  
+.mail a {
+    font-size: 1rem;
+    font-family: var(--font);
+    color: var(--wait-color);
+    line-height: 1.563;
+}
+
+.mail::before {
+    display: inline-block;
+    content: '\2706'; 
+    width: 1.2rem;
+    height: 0.8rem;
+    color: var(--green-color);
+}
+
+.team-card-meta {
+    width: 17.3rem;
+    height: 5.3rem;
+    background-color: var(--color-comand);
+    bottom: 3.4rem;
+    padding-top: 1.2rem;
+    padding-left: 2rem;
+    margin-top: -0.25rem;
+}
+
+.team-card-name {
+    font-size: 1rem;
+    font-family: var(--font);
+    text-transform:uppercase; 
+    color: var(--wait-color);
+    line-height: 1.563;
+}
+
+.team-card-pos {
+    font-size: 0.7rem;
+    font-family: var(--font); 
+    color: var(--wait-color);
+    line-height: 1.786;
+}
+
+/*--------customs------------*/
+
+.customs-list-icons {
+    height: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.customs-list-icon {
+    width: 5.1rem;
+    height: 5.1rem;
+    padding: 0.4rem;
+    flex: 0 1 100px;
+}
+
+.customs-list-icon img {
+    object-fit: cover;
+}
+
+/*------------footer------------*/
+
+.connect {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--color-comand);
+    text-align: center;
+}
+
+.pfone-number {
+    display: block;
+    font-size: 1rem;
+    font-family: var(--font); 
+    color: var(--wait-color);
+    line-height: 1.786;
+}
+
+.pfone-number::before {
+    display: inline-block;
+    content: '\260E';
+    width: 2rem;
+    height: 2rem;
+    color: var(--green-color);
+}
+
+.mail-adress {
+    
+    font-size: 1rem;
+    font-family: var(--font); 
+    color: var(--wait-color);
+    line-height: 1.786;
+}
+
+.mail-adress::before {
+    display: inline-block;
+    content: '\2709';
+    width: 2rem;
+    height: 2rem;
+    color: var(--green-color);
+}
+
+@media (min-width: 320px and max-width: 767px) {
+    .container {
+        min-height: 100vh;
+    }
+
+    .nav ul {
+        width: 19rem;
+    }    
+}
+
+@media (min-width: 768px) {
+    .masthead {
+        flex-direction: row;
+    }
+
+    .nav {
+        width: 22.3rem;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+
+    .hero {
+        margin-top: 15rem;
+    }
+
+     /*---------------*/    
+     
+    .clearfix {
+        margin-left: 1.7rem;
+        width: 16.25rem;
+        float: right;
+    }
+
+    .clearfix::after{
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    /*------------*/
+
+    .products-cards {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .products-card {
+        margin: 0;
+    }
+
+    .products-card-image img {
+        width: 17.5rem;
+    }
+    
+    /*-----------*/
+    
+    .team-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .section-header {
+        height: 100%;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .nav {
+        width: 100vw;
+        margin-top: 1.6rem;
+    }
+    .nav ul {
+        flex-wrap: nowrap;
+        align-items: center;
+        flex: 1 0 100%
+    }
+    .masthead {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+    }
+    .prod {
+        margin-right: 10rem;
+    }
+
+    .products-card {
+        width: 17rem;
+    }
+
+    .products-card-image {
+        padding: 1.2rem 1rem;
+    }
+
+    .products-card-image img {
+        width: 15rem;
+    }
+
+    .products-card-meta {
+        width: 15rem;
+    }
+}
