@@ -347,6 +347,10 @@ body {
  
 /*-------team-------------*/
 
+.team-wrapper {
+    background: linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 31%, rgba(248,181,0,1) 69%, rgba(147,250,154,1) 100%);    
+}
+
 .team-list-item {
     width: 23.73rem;
     position: relative;
@@ -378,6 +382,7 @@ body {
 .team-card-image:hover > .team-card-contacts {
     display: block;
 }
+
 
 .pfone a {
     font-size: 1rem;
@@ -417,13 +422,19 @@ body {
     padding-top: 1.2rem;
     padding-left: 2rem;
     margin-top: -0.25rem;
+    color: var(--wait-color);
 }
+
+.team-card-image:hover > .team-card-meta {
+    background-color: var(--green-color);
+    color: var(--color-comand);
+    }
 
 .team-card-name {
     font-size: 1rem;
     font-family: var(--font);
     text-transform:uppercase; 
-    color: var(--wait-color);
+    /* color: var(--wait-color); */
     line-height: 1.563;
 }
 
