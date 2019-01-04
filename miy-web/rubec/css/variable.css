@@ -1,0 +1,10 @@
+:root {
+    --green-color: rgb(164, 194, 61);
+    --yellow-color : #cece5b;
+    --bleck-color: rgb(0, 0, 0);
+    --color-comand: rgb(51, 51, 51);
+    --wait-color: rgb(255, 255, 255);
+    --font: 'Open Sans', sans-serif;
+    --color-fonts-footer: rgb(127, 127, 127);
+    --color-fonts-text: rgb(136, 136, 136);
+    }
