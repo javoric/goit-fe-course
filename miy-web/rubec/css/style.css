@@ -401,13 +401,13 @@ margin-top: 12px;
 .team-card-contacts {
     width: 17.3rem;
     height: 5.3rem;
-    background-color: var(--bleck-color);
-    opacity: 0.502;
+    /* background-color: var(--bleck-color);
+    opacity: 0.502; */
     position: absolute;
     bottom: 6.4rem;
     /* padding-left: 2rem; */
     padding-top: 2rem; 
-    /* display: none; */
+    display: none;
 }
 
 .team-card-image:hover > .team-card-contacts {
@@ -416,6 +416,10 @@ margin-top: 12px;
 
 .connecting {
     display: inline-block;
+}
+
+.connecting img {
+    width: 30px;
 }
 
 .pfon {
