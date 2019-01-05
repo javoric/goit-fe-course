@@ -262,7 +262,7 @@ body {
     width: 17.6rem;
     
     position: absolute;
-    top: 75%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -272,7 +272,7 @@ body {
 .products-card-name {
     font-size: 1.2rem;
     font-family: var(--font);
-    color: var(--wait-color);
+    color: rgb(53, 109, 94);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.316;
@@ -282,7 +282,7 @@ body {
 .products-card-description {
     font-size: 0.8rem;
     font-family: var(--font);
-    color: var(--green-color);
+    color: rgb(91, 115, 9);
     /* text-transform: uppercase; */
     font-style: italic;
     line-height: 1.286; 
@@ -295,7 +295,7 @@ margin-top: 12px;
 
 .check p {
     display: inline-block;
-    color: var(--yellow-color);
+    color: rgb(91, 115, 9);
     font-size: 20px;
     font-weight: 400;
     margin-right: 15px;
@@ -303,7 +303,7 @@ margin-top: 12px;
 
 .grn {
     display: inline-block;
-    color: #00ffa3;
+    color: #6d73a2;
     font-size: 30px;
     font-weight: 700;
 }
@@ -315,7 +315,7 @@ margin-top: 12px;
 
 .kop {
     display: inline-block;
-    color: rgb(100, 100, 248);
+    color: #6d73a2;
     font-size: 12px;
 }
 
