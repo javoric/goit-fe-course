@@ -407,7 +407,7 @@ margin-top: 12px;
     bottom: 6.4rem;
     /* padding-left: 2rem; */
     padding-top: 2rem; 
-    display: none;
+    /* display: none; */
 }
 
 .team-card-image:hover > .team-card-contacts {
@@ -421,6 +421,7 @@ margin-top: 12px;
 .pfon {
     display: flex;
     justify-content: space-around;
+    height: 20px;
 }
 
 .pfon a {
