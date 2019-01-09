@@ -56,13 +56,18 @@ body {
     width: 125px;
 }
 
+/* .producti {
+    display: none;
+    width: 125px;
+}
+
 .meet {
     text-decoration: none;
     font-family: var(--font);
     font-size: 0.8rem;
-    color: var(--color-nav);
+    color: white;
     border: 2px solid var(--yellow-color);
-    background-color: #55edf21c;
+    background-color: black;
     margin-bottom: 2px;
     border-radius: 11%;
 }
@@ -79,7 +84,7 @@ body {
 
 .meet:hover {
     font-weight: 700;
-}
+} */
 
 .hero {
     margin-top: 5rem;
@@ -588,9 +593,47 @@ body {
         flex: 1 0 100%
     }
 
+    /* .producti {
+        display: none;
+        width: 125px;
+    } */
+    
     .meet {
-        display: block;
+        /* display: block; */
+        text-decoration: none;
+        font-family: var(--font);
+        font-size: 0.8rem;
+         color: var(--color-nav);
+        /*border: 2px solid var(--yellow-color);
+        background-color: #55edf21c;
+        margin-bottom: 2px;
+        border-radius: 11%; */
     }
+
+    .producti li {
+        /* color: var(--color-nav); */
+        border: 2px solid var(--yellow-color);
+        background-color: #55edf21c;
+        margin-bottom: 2px;
+        border-radius: 11%;
+    }
+    
+    .meet :first-child {
+        margin-bottom: 0;
+    }
+    
+    .nav-item:hover > .producti {
+        display: block;
+        font-style: italic;
+        font-weight: 400;
+        
+    }
+    
+    .producti li:hover {
+        font-weight: 700;
+        background-color: #55eff2;
+    }
+
     .masthead {
         position: relative;
     }
