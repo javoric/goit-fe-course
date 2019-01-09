@@ -1,6 +1,6 @@
 body {
     background-color: #55ebf252;
-}
+}`  
 
 .wrapper {
     background-image: url(../images/wrapper/layer.4png);
@@ -49,6 +49,36 @@ body {
     font-family: var(--font);
     font-size: 1.1rem;
     color: var(--color-nav);
+}
+
+.producti {
+    display: none;
+    width: 125px;
+}
+
+.meet {
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 0.8rem;
+    color: var(--color-nav);
+    border: 2px solid var(--yellow-color);
+    background-color: #55edf21c;
+    margin-bottom: 2px;
+    border-radius: 11%;
+}
+
+.meet :first-child {
+    margin-bottom: 0;
+}
+
+.nav-item:hover > .producti {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.meet:hover {
+    font-weight: 700;
 }
 
 .hero {
@@ -205,7 +235,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-     display: none; 
+     /* display: none;  */
 }
 
 .products-card-name {
@@ -229,7 +259,7 @@ body {
 }
 
 .check {
-margin-top: 12px;
+   margin-top: 12px;
 }
 
 .check p {
@@ -238,29 +268,27 @@ margin-top: 12px;
     font-size: 20px;
     font-weight: 400;
     margin-right: 15px;
-}
+}  
 
 .grn {
-    display: inline-block;
+    display: inline-block;    
     color: #6d73a2;
     font-size: 30px;
     font-weight: 700;
 }
 
 .grn::after {
-    display: inline-block;
+    display: inline-block;   
     content: '\201A'
 }
 
 .kop {
-    display: inline-block;
+    display: inline-block;    
     color: #6d73a2;
     font-size: 12px;
 }
 
-.products-card-image:hover > .products-card-meta {
-    display: block;
-}
+
 
 .slick-arrow {
     border: 0;
@@ -466,7 +494,7 @@ margin-top: 12px;
         height: 100vh;
     }
 
-    .nav ul {
+    .nav-ul {
         width: 19rem;
     }  
     
@@ -490,7 +518,7 @@ margin-top: 12px;
         width: 22.3rem;
     }
 
-    .nav ul {
+    .nav-ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; 
@@ -554,10 +582,14 @@ margin-top: 12px;
         width: 100vw;
         margin-top: 4.5rem;
     }
-    .nav ul {
+    .nav-ul {
         flex-wrap: nowrap;
         align-items: center;
         flex: 1 0 100%
+    }
+
+    .meet {
+        display: block;
     }
     .masthead {
         position: relative;
