@@ -408,6 +408,17 @@ body {
 }
 .part {
     height: 100vh;
+    width: 50%;
+}
+
+.s {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.text span {
+    font-weight: 700;
+    color: var(--color-nav);
 }
 
 /*--------customs------------*/
