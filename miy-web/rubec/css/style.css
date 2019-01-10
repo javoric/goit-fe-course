@@ -12,7 +12,7 @@ body {
 
 .masthead-wrapper {
     background-image:
-     linear-gradient(to bottom, rgba(252,234,187,1) 0%, rgba(252,205,77,0.83) 31%, rgba(248,181,0,0.61) 72%, rgba(147,250,154,0.46) 100%),
+     linear-gradient(to bottom, rgba(252,234,187,0.6) 0%, rgba(252,205,77,0.7) 31%, rgba(248,181,0,0.61) 72%, rgba(147,250,154,0.46) 100%),
     url(../images/wrapper/sobaka.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,6 +32,20 @@ body {
     justify-content: space-around;
     padding-top: 1rem;
 }
+
+.logo {
+    position: relative;
+}
+
+.logo::after {
+    display: inline-block;
+    content: '\00AE';
+    position: absolute;
+    left: 185px;
+    bottom: 165px;
+    color: var(--bleck-color);
+}
+
  .nav-item {
     width: 5.625rem;
     height: 1.875rem;
@@ -55,36 +69,6 @@ body {
     display: none;
     width: 125px;
 }
-
-/* .producti {
-    display: none;
-    width: 125px;
-}
-
-.meet {
-    text-decoration: none;
-    font-family: var(--font);
-    font-size: 0.8rem;
-    color: white;
-    border: 2px solid var(--yellow-color);
-    background-color: black;
-    margin-bottom: 2px;
-    border-radius: 11%;
-}
-
-.meet :first-child {
-    margin-bottom: 0;
-}
-
-.nav-item:hover > .producti {
-    display: block;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.meet:hover {
-    font-weight: 700;
-} */
 
 .hero {
     margin-top: 5rem;
@@ -196,11 +180,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* .text {
-    margin-top: 0.5rem;
-    line-height: 1.2; 
-} */
-
 .text::before {
     display: inline-block;
     content: "";
@@ -240,7 +219,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-     /* display: none;  */
 }
 
 .products-card-name {
@@ -257,7 +235,6 @@ body {
     font-size: 0.8rem;
     font-family: var(--font);
     color: rgb(91, 115, 9);
-    /* text-transform: uppercase; */
     font-style: italic;
     line-height: 1.286; 
     margin-top: 0.5rem; 
@@ -592,30 +569,28 @@ body {
         align-items: center;
         flex: 1 0 100%
     }
-
-    /* .producti {
-        display: none;
-        width: 125px;
-    } */
-    
+ 
     .meet {
-        /* display: block; */
         text-decoration: none;
         font-family: var(--font);
         font-size: 0.8rem;
          color: var(--color-nav);
-        /*border: 2px solid var(--yellow-color);
-        background-color: #55edf21c;
-        margin-bottom: 2px;
-        border-radius: 11%; */
     }
 
     .producti li {
-        /* color: var(--color-nav); */
         border: 2px solid var(--yellow-color);
         background-color: #55edf21c;
         margin-bottom: 2px;
         border-radius: 11%;
+        height: 40px;
+        position: relative;
+    }
+
+    .meet {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
     
     .meet :first-child {
