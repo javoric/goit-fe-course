@@ -411,9 +411,12 @@ body {
     width: 50%;
 }
 
-.s {
+.dogs {
     font-style: italic;
     font-size: 30px;
+    font-weight: 600;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
 }
 
 .text span {
