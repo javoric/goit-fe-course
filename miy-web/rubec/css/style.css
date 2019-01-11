@@ -406,10 +406,9 @@ body {
 .region ul {
     height: 100%;
 }
-.part {
+/* .part {
     height: 100vh;
-    width: 50%;
-}
+} */
 
 .dogs {
     font-style: italic;
@@ -569,6 +568,10 @@ body {
     .region {
         display: flex;
         justify-content: space-between;
+    }
+
+    .part {
+        width: 50%;
     }
 }
 
