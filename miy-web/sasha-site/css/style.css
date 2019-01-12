@@ -1,6 +1,24 @@
 body {
-    background-image: url(../images/logo1.jpg);
+    background-image: url(../images/logo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 300px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #060606;
+}
+
+li {
+    border: 2px solid blue; 
+
 }
