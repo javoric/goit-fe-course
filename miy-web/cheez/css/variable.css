@@ -1,0 +1,15 @@
+:root {
+    --green-color: rgb(164, 194, 61);
+    --yellow-color : #cece5b;
+    --color-h1: #f1f109;
+    --bleck-color: rgb(0, 0, 0);
+    --color-nav: #ffca00;
+    --color-comand: rgb(14, 34, 90);
+    --wait-color: rgb(255, 255, 255);
+    --font: 'Open Sans', sans-serif;
+    --font-rob: 'Roboto', sans-serif;
+    --color-fonts-footer: rgb(127, 127, 127);
+    --color-fonts-text: rgb(236, 236, 236);
+    --gradient: linear-gradient(to bottom, rgba(255,158,84,0.3) 0%, rgba(69,82,230,0.3) 100%);
+    }
+
