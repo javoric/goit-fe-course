@@ -1,10 +1,38 @@
 body {
-    background-image: url(../images/logo2.jpg);
+    background-image: url(../images/fon.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 300px;
+    /* padding: 300px; */
 
+}
+.wrapper {
+    background-image: url(../images/fon-red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.box-2 {
+    height: 100vh;
+    position: relative;   
+}
+
+.top {
+
+}
+
+.bottom {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+
+.bottom-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 36px;
+    z-index: 1;
 }
 
 ul {
