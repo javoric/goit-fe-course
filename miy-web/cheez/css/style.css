@@ -18,12 +18,13 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;  
+    height: 100vh;  
 }
 
 .container {
     min-width: 20rem;
     margin: auto;
+    
 }
 
 .masthead {
@@ -52,6 +53,11 @@ body {
     text-shadow: 2px 2px 5px #41e281;
 }
 
+.producti {
+    display: none;
+    width: 125px;
+}
+
 .hero {
     margin-top: 5rem;
     text-align: center;
@@ -68,7 +74,7 @@ body {
     margin-bottom: 1.5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    color: y
+    
 }
 
 .hero::after {
@@ -92,18 +98,19 @@ body {
 
 .epigraph {
     display: block;
-    width: 540px;
+    width: 350px;
     margin: auto;
-    margin-top: 190px;
+    margin-top: 8rem;
     text-align: center;
     color: #f5deb3;
+    padding-bottom: 100px;
 }
+
 
 
 /*production---------*/
 
 .wrap {
-    /* background: var(--gradient);    */
     background-image:
     var(--gradient),
    url(../images/wrapper/morning.jpg);
@@ -118,7 +125,6 @@ body {
     width: 100%;
     text-align: center;
     height: 8rem; 
-    padding-bottom: 0.7rem;
     
 }
 
@@ -135,7 +141,7 @@ body {
     color: var(--wait-color);
     font-family: var(--font);
     font-weight: bold;
-    line-height: 2;
+    /* line-height: 2; */
 }
 
 .section-header-aside {
@@ -170,22 +176,18 @@ body {
     font-style: italic;
     font-size: 0.8rem;
     padding-left: 2rem;
-    padding-right: 130px;
+    padding-right: 8.125rem;
     color: rgb(86, 27, 13);
 }
 
 .rube {
     font-weight: 700;
-    /* padding-left: 4.5rem; */
+    padding-left: 4.5rem;
     margin-top: 1.2rem;
     font-size: 1.1rem;
     color: var(--color-comand);
 }
 
-/* .text {
-    margin-top: 0.5rem;
-    line-height: 1.2; 
-} */
 
 .text::before {
     display: inline-block;
@@ -253,7 +255,6 @@ body {
     font-size: 0.8rem;
     font-family: var(--font);
     color: rgb(91, 115, 9);
-    /* text-transform: uppercase; */
     font-style: italic;
     line-height: 1.286; 
     margin-top: 0.5rem; 
@@ -266,9 +267,9 @@ margin-top: 12px;
 .check p {
     display: inline-block;
     color: rgb(91, 115, 9);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .grn {
@@ -286,7 +287,14 @@ margin-top: 12px;
 .kop {
     display: inline-block;
     color: #6d73a2;
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+.kop::after {
+    content: '\20B4';
+    display: inline-block;
+    margin-left: 5px;
+    color: #330101;
 }
 
 .products-card-image:hover > .products-card-meta {
@@ -339,6 +347,16 @@ margin-top: 12px;
  
 /*-------team-------------*/
 
+.team-wrapper {
+    background-image:
+    linear-gradient(to bottom, rgba(252,234,187,0.6) 0%, rgba(252,205,77,0.7) 31%, rgba(248,181,0,0.61) 72%, rgba(147,250,154,0.46) 100%),
+   url(../images/wrapper/sobaka-3.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+}
+
 .team-list-item {
     width: 23.73rem;
     position: relative;
@@ -369,13 +387,13 @@ margin-top: 12px;
 }
 
 .connecting img {
-    width: 30px;
+    width: 1.875rem;
 }
 
 .pfon {
     display: flex;
     justify-content: space-around;
-    height: 20px;
+    height: 1.25rem;
 }
 
 .pfon a {
@@ -421,41 +439,77 @@ margin-top: 12px;
     font-size: 1rem;
     font-family: var(--font);
     color: var(--color-fonts-text);
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .region ul {
     height: 100%;
 }
 .part {
-    height: 100vh;
+    margin-top: 20px;
+}
+
+.dogs {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.text span {
+    font-weight: 700;
+    color: var(--color-nav);
 }
 
 /*--------customs------------*/
+
+.customs-wrapper {
+    background-image:
+    linear-gradient(to bottom, rgba(252,234,187,0.6) 0%, rgba(252,205,77,0.7) 31%, rgba(248,181,0,0.61) 72%, rgba(147,250,154,0.46) 100%),
+   url(../images/wrapper/condor.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 100vh;  
+}
+
+.customs-list {
+    margin: auto;
+    width: 300px;
+}
 
 .customs-list-icons {
     height: 100%;
     margin-top: 1rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
 }
 
 .customs-list-icon {
-    padding: 0.4rem;
-    flex: 0 1 0.625rem;
+    margin-bottom: 0.625rem;
 }
 
 .customs-list-icon img {
-    object-fit: cover;
+    display: block;
 }
+
+.customs-list-icon :first-child {
+    margin-bottom: 0;
+}
+
 
 /*------------footer------------*/
 
 .connect {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     background-color: var(--color-comand);
     text-align: center;
 }
@@ -497,7 +551,7 @@ margin-top: 12px;
         height: 100vh;
     }
 
-    .nav ul {
+    .nav-ul {
         width: 19rem;
     }  
     
@@ -526,19 +580,62 @@ margin-top: 12px;
         width: 22.3rem;
     }
 
-    .nav ul {
+    .nav-ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; 
     }
+
+    .meet {
+        text-decoration: none;
+        font-family: var(--font);
+        font-size: 0.8rem;
+         color: var(--color-nav);
+    }
+
+    .producti li {
+        border: 2px solid var(--yellow-color);
+        background-color: #55edf21c;
+        margin-bottom: 2px;
+        border-radius: 11%;
+        height: 40px;
+        position: relative;
+    }
+
+    .meet {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .meet :first-child {
+        margin-bottom: 0;
+    }
+    
+    .nav-item:hover > .producti {
+        display: block;
+        font-style: italic;
+        font-weight: 400;
+        
+    }
+    
+    .producti li:hover {
+        font-weight: 700;
+        background-color: #55eff2;
+    }
+
 
     .hero {
         margin-top: 7rem;
     }
     .description {
         width: 28rem;
-        font-size: 50px;
-        margin-top: 10rem;
+    }
+
+    .epigraph {
+        width: 540px;
+        margin-top: 50px;
     }
 
     .text {
@@ -588,36 +685,52 @@ margin-top: 12px;
         display: flex;
         justify-content: space-between;
     }
+
+    .part {
+        width: 48%;
+    }
 }
 
 @media (min-width: 960px) {
 
     .nav {
         width: 100vw;
-        margin-top: 1.5rem;
+        margin-top: 4.5rem;
     }
-    .nav ul {
+    .nav-ul {
         flex-wrap: nowrap;
         align-items: center;
         flex: 1 0 100%
     }
+
+    
+
     .masthead {
         position: relative;
     }
     .logo {
         position: absolute;
+        top: 4rem;
     }
 
     .hero {
         margin-top: 12rem;
     }
 
+    .section-header-caption h3 {
+        line-height: 2;
+    }
+
     .description {
-        width: 40rem;
+        width: 35rem;
     }
     .richard {
         padding-right: 640px;
 
+    }
+
+    .epigraph {
+        margin-top: 70px;
     }
 
     .prod {
