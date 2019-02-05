@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh;  
+    height: 100vh;  
 }
 
 .container {
@@ -32,6 +32,7 @@ body {
     justify-content: space-around;
     padding-top: 1rem;
 }
+
 
 .logo {
     position: relative;
@@ -86,7 +87,7 @@ body {
     margin-bottom: 1.5rem;
     padding-left: 0.8rem;
     padding-right: 0.8rem;
-    color: y
+    
 }
 
 .hero::after {
@@ -248,9 +249,9 @@ body {
 .check p {
     display: inline-block;
     color: rgb(91, 115, 9);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    margin-right: 15px;
+    margin-right: 1rem;
 }  
 
 .grn {
@@ -268,7 +269,7 @@ body {
 .kop {
     display: inline-block;    
     color: #6d73a2;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .kop::after {
@@ -334,7 +335,7 @@ body {
    background-size: cover;
    background-position: center;
    width: 100%;
-   min-height: 100vh;  
+   /* min-height: 100vh;   */
 }
 
 .team-list-item {
@@ -367,13 +368,13 @@ body {
 }
 
 .connecting img {
-    width: 30px;
+    width: 1.875rem;
 }
 
 .pfon {
     display: flex;
     justify-content: space-around;
-    height: 20px;
+    height: 1.25rem;
 }
 
 .pfon a {
@@ -419,7 +420,7 @@ body {
     font-size: 1rem;
     font-family: var(--font);
     color: var(--color-fonts-text);
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 /* .region ul {
@@ -472,7 +473,7 @@ body {
 }
 
 .customs-list-icon {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .customs-list-icon a {
@@ -553,7 +554,9 @@ body {
         flex-direction: row;
     }
 
-    
+    /* .section-header {
+        height: 100vh;
+    } */
 
     .nav {
         width: 22.3rem;
@@ -564,6 +567,46 @@ body {
         flex-wrap: wrap;
         justify-content: space-around; 
     }
+
+    .meet {
+        text-decoration: none;
+        font-family: var(--font);
+        font-size: 0.8rem;
+         color: var(--color-nav);
+    }
+
+    .producti li {
+        border: 2px solid var(--yellow-color);
+        background-color: #55edf21c;
+        margin-bottom: 2px;
+        border-radius: 11%;
+        height: 40px;
+        position: relative;
+    }
+
+    .meet {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .meet :first-child {
+        margin-bottom: 0;
+    }
+    
+    .nav-item:hover > .producti {
+        display: block;
+        font-style: italic;
+        font-weight: 400;
+        
+    }
+    
+    .producti li:hover {
+        font-weight: 700;
+        background-color: #55eff2;
+    }
+
 
     .hero {
         margin-top: 7rem;
@@ -592,6 +635,10 @@ body {
     }
 
     /*------------*/
+
+/* .products-card {
+    margin-top: 120px;
+} */
 
     .products-card {
         margin: 0;    
@@ -633,7 +680,7 @@ body {
         flex: 1 0 100%
     }
  
-    .meet {
+    /* .meet {
         text-decoration: none;
         font-family: var(--font);
         font-size: 0.8rem;
@@ -670,7 +717,7 @@ body {
     .producti li:hover {
         font-weight: 700;
         background-color: #55eff2;
-    }
+    } */
 
     .masthead {
         position: relative;
@@ -683,9 +730,9 @@ body {
         margin-top: 12rem;
     }
 
-    .production-wrapper {
+    /* .production-wrapper {
         height: 100vh;
-    }
+    } */
 
     .description {
         width: 35rem;
