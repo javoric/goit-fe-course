@@ -25,7 +25,7 @@
     - Вывести alert с текстом `Общая сумма чисел равна ${сумма}`
 */
 
-/*let userInput;
+let userInput;
 const numbers = [];
 let total = 0;
   
@@ -37,43 +37,46 @@ let total = 0;
 }
   while (true);
 for (let i = 0; i < numbers.length; i += 1) { 
-  if (numbers > 0) {
+  if (numbers >= 0) {
+    
   let conjunction = Number(numbers[i]);
   total = total + conjunction; 
    }
   alert(`сумма: ${total}`);
- }*/
+  break;
+ }
 
 
- const products = {
-  bread: 10,
-  milk: 15,
-  apples: 20,
-  chicken: 50,
-  pork: 80,
-  cheese: 60,
-  tea: 20,
-  candy: 25
- };
+//  const products = {
+//   bread: 10,
+//   milk: 15,
+//   apples: 20,
+//   chicken: 50,
+//   pork: 80,
+//   cheese: 60,
+//   tea: 20,
+//   candy: 25
+//  };
 
- const order = {
-  bread: 2,
-  milk: 2,
-  apples: 1,
-  cheese: 1
-};
+//  const order = {
+//   bread: 2,
+//   milk: 2,
+//   apples: 1,
+//   cheese: 1
+// };
 
-function countTotalPrice(orderObj, productsObj) {
-	const orderKeys = Object.keys(orderObj);
-	let total = 0;
+// function countTotalPrice(orderObj, productsObj) {
+// 	const orderKeys = Object.keys(orderObj);
+// 	let total = 0;
 	
-	for(const key of orderKeys) {
-		total += orderObj[key] * productsObj[key];
-	}
+// 	for(const key of orderKeys) {
+// 		total += orderObj[key] * productsObj[key];
+// 	}
 	
-	return total;
-}
+// 	return total;
+// }
 
-const result = countTotalPrice(order, products);
+// const result = countTotalPrice(order, products);
 
-console.log(result);
+// console.log(result);
+

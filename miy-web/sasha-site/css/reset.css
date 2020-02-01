@@ -40,3 +40,15 @@ body {
 ol, ul {
 	list-style: none;
 }
+
+@font-face {
+    font-family: 'Tahoma, Geneva, sans-serif';
+    src: url('vollkorn-italic-webfont.eot');
+    src: url('vollkorn-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('vollkorn-italic-webfont.woff2') format('woff2'),
+         url('vollkorn-italic-webfont.woff') format('woff'),
+         url('vollkorn-italic-webfont.ttf') format('truetype'),
+         url('vollkorn-italic-webfont.svg#vollkornitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

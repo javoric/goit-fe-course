@@ -1,52 +1,10 @@
-body {
-    background-image: url(../images/fon.png);
+.conteyner {
+    background-color: rgb(156, 4, 4);
+    height: 100vh;;
+}
+.spa {
+    background-image: url(../images/logo11.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* padding: 300px; */
-
-}
-.wrapper {
-    background-image: url(../images/fon-red.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;    
-}
-
-.box-2 {
-    height: 100vh;
-    position: relative;   
-}
-
-.top {
-
-}
-
-.bottom {
-    position: absolute;
-    width: 100vw;
-    bottom: 0;
-}
-
-.bottom-logo {
-    position: absolute;
-    bottom: 20px;
-    left: 36px;
-    z-index: 1;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #060606;
-}
-
-li {
-    border: 2px solid blue; 
-
 }

@@ -54,7 +54,7 @@ body {
     font-family: var(--font);
     font-size: 1.1rem;
     color: var(--color-nav);
-    text-shadow: 2px 2px 5px #41e281;
+    text-shadow: 2px 2px 5px #020202;
 }
 
 .producti {
@@ -95,7 +95,7 @@ body {
     width: 15.6rem;
     margin-top: 7rem;
     font-style: italic;
-    color: #9bff00;
+    color: var(--color-nav);
     padding-bottom: 0.6rem; 
     font-size: 35px;
 }
